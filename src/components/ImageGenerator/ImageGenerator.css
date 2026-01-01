@@ -1,0 +1,142 @@
+.ai-image-generator{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    gap: 12px;
+    padding: 0 15px;
+}
+
+.header{
+    font-size: 42px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.header span{
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.img-loading{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-loading img{
+    width: 350px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.search-box{
+    display: flex;
+    width: 700px;
+    max-width: 95%;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: #1f3540;
+}
+
+.search-input{
+    width: 450px;
+    max-width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 35px;
+    margin-right: 35px;
+}
+
+.search-input::placeholder{
+    color: #999;
+}
+
+.generate-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 52px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #de1b89;
+    cursor: pointer;
+    margin-right: 3.5px;
+    flex-shrink: 0;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .header{
+        font-size: 32px;
+    }
+    
+    .search-box{
+        width: 600px;
+        height: 55px;
+    }
+    
+    .search-input{
+        width: 350px;
+        font-size: 16px;
+        padding-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .generate-btn{
+        width: 170px;
+        height: 48px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .ai-image-generator{
+        margin-top: 10px;
+        margin-bottom: 0;
+        gap: 8px;
+        padding: 0 10px;
+    }
+    
+    .header{
+        font-size: 26px;
+        padding-bottom: 3px;
+    }
+    
+    .search-box{
+        flex-direction: column;
+        height: auto;
+        padding: 8px;
+        gap: 8px;
+        border-radius: 25px;
+        margin-bottom: 0;
+    }
+    
+    .search-input{
+        width: 100%;
+        padding-left: 20px;
+        margin-right: 0;
+        height: 45px;
+        font-size: 16px;
+    }
+    
+    .generate-btn{
+        width: 100%;
+        height: 45px;
+        font-size: 18px;
+        margin-right: 0;
+    }
+}
